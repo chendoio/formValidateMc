@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root { 
+    --first-color: #e74c3c;
+    --second-color: #00ff00;
+    --white: #fff;
+    --bg-color: #1c1c1c;
+    --black: #000;
+    --border: #4e4d4d;
+    --bg-global: #5ca391;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    margin-top: -3em;
+}
+h1 {
+    text-align: center;
+    font-size: 10em;
+    text-transform: uppercase;
+    color: var(--bg-global);
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 36em;
+    border: .1em solid var(--border);
+    border-radius: 2em;
+    margin: 10em auto;
+    position: relative;
+}
+form::before {
+    content: '\A';
+    background-color: var(--bg-global);
+    color: var(--bg-button);
+    border-radius: 2em 100% 2em 2em;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    
+}
+form::after {
+    content: '\A';
+    background-color: var(--bg-color);
+    border-radius: 100% 2em 2em 0;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+}
+label {
+    font-size: 1.7em;
+    color: var(--white);
+    align-self: baseline;
+    margin-left: 1.2em;
+    z-index: 999;
+}
+input {
+    width: 36em;
+    border-radius: 1em;
+    border: .1em solid var(--border);
+    outline: none;
+    margin: 1em;
+    padding-left: 1em;
+    height: 3em;
+    position: relative;
+    z-index: 99999;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.form-control {
+    position: relative;
+    padding: .7em;
+}
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 2.3em;
+	right: 2.4em;
+}
+/*border error*/
+.form-control.error input {
+    border: .2em solid var(--first-color);
+}
+/*border succes*/
+.form-control.success input{
+    border-color: var(--bg-global);
+ }
+
+ .form-control.success i.fa-check {
+	color: var(--bg-global);
+	visibility: visible;
+    z-index: 99999;
+}
+
+.form-control.error i.fa-times {
+	color: var(--first-color);
+	visibility: visible;
+    z-index: 99999;
+}
+
+.form-control small {
+	color: var(--first-color);
+    font-family: sans-serif;
+	position: absolute;
+	bottom: 0;
+	right: 3em;
+	top: 5.1em;
+	visibility: hidden;
+    letter-spacing: .2em;
+    z-index: 9999;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+#button {
+    background-color: var(--bg-global);
+    color: var(--white);
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    padding: .3em 1em;
+    border-radius: .7em;
+    border: none;
+    align-self: flex-end;
+    position: relative;
+    cursor: pointer;
+    right: 1.8em;
+    z-index: 99999;
+}
+/*dev by chendo.io*/
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--bg-global);
+}
+/*mess alert*/
+.messAlert {
+    position: absolute;
+    top: 0;
+    margin-top: 3em;
+}
