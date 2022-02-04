@@ -46,7 +46,7 @@ function messError(input, message) {
     const small = document.createElement('SMALL');
     formControl.className = 'form-control error';
     small.textContent = message;
-    formControl.appendChild(small);   
+    formControl.appendChild(small);
 }
 // Set Success
 function Success(input) {

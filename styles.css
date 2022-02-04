@@ -118,12 +118,22 @@ textarea {
  .form-control.success i.fa-check {
 	color: var(--bg-global);
 	visibility: visible;
-    z-index: 1;
+    z-index: 5;
 }
 .form-control.error i.fa-times {
 	color: var(--first-color);
 	visibility: visible;
     z-index: 5;
+}
+.form-control small {
+	color: var(--white);
+    font-family: sans-serif;
+	position: absolute;
+	bottom: 0;
+	right: 3em;
+	top: 5em;
+	visibility: hidden;
+    letter-spacing: .2em;
 }
 .form-control.error small {
 	visibility: visible;
