@@ -1,6 +1,6 @@
 # formValidateMc
 Form Validate | Source Code
 
-Dev by Chendo.io
+Dev by Chendo
 
 Source Code Free
